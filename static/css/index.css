@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+h1{
+    font-size: 42px;
+}
+
+.center{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    width: 60%;
+    padding: 16px;
+    font-size: 22px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea::placeholder{
+    font-size: 22px;
+}
+
+textarea:focus{
+    outline: none;
+    border: 1px solid #000;
+}
+
+button {
+    cursor: pointer;
+    width: 60%;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 18px;
+    /* set background-color to light blue color */
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.box{
+    height: 32px;
+}
+
+.big-box{
+    height: 64px;
+}
+
+#emoji-player{
+   font-size: 40px;
+   position: absolute;
+   right: 16px;
+   bottom: 16px;
+}
+
+#group{
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.loading{
+    height: 60px;
+    width: 60px;
+    display: none;
+}
+
+.result{
+    width: 300px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+}
+
+.result .emoji{
+    padding-top: 16px;
+    font-size: 64px;
+}
+
+.result .text{
+    padding:  16px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.result .sentiment{
+    width: 100%;
+    height: 40px;
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    textarea{width: 90%;}
+    #group{display: none}
+}
